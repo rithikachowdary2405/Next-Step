@@ -13,11 +13,14 @@
         android:layout_height="40dp">
 
         <ImageView
-            android:id="@+id/backButton"
-            android:layout_width="38dp"
-            android:layout_height="35dp"
+            android:id="@+id/back_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
             android:src="@drawable/back"
-            android:layout_alignParentStart="true" />
+            android:clickable="true"
+            android:focusable="true"/>
 
         <ImageView
             android:id="@+id/notificationIcon"
@@ -25,13 +28,15 @@
             android:layout_height="28dp"
             android:layout_alignParentEnd="true"
             android:layout_marginEnd="0dp"
-            android:src="@drawable/notification1" />
+            android:src="@drawable/notification1"
+            android:clickable="true"
+            android:focusable="true"/>
     </RelativeLayout>
 
     <!-- Experience Section Header -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="55dp"
         android:background="#D8A5A5"
         android:padding="12dp"
         android:gravity="center"
@@ -41,13 +46,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Experience"
-            android:textSize="28sp"
+            android:textSize="25sp"
             android:textStyle="bold"
             android:textColor="@android:color/black"/>
 
         <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             android:src="@drawable/exp"
             android:layout_marginStart="8dp" />
     </LinearLayout>
@@ -60,7 +65,7 @@
         android:textSize="20sp"
         android:textColor="@android:color/black"
         android:gravity="center"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="15dp"
         android:textStyle="bold" />
 
     <!-- Questions -->
@@ -179,25 +184,27 @@
             <!-- Submit Button -->
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:layout_marginTop="0dp">
+                android:layout_height="60dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Submit"
-                    android:textStyle="bold"
-                    android:textSize="16sp"
-                    android:padding="12dp"
+                    android:layout_marginTop="0dp"
                     android:background="@android:color/holo_green_light"
-                    android:textColor="@android:color/white"
+                    android:clickable="true"
+                    android:focusable="true"
                     android:gravity="center"
-                    android:layout_marginTop="1dp"/>
+                    android:padding="12dp"
+                    android:text="Submit"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
-    <!-- Bottom Navigation Bar -->
+
     <!-- Bottom Navigation Bar -->
     <LinearLayout
         android:id="@+id/bottom_navigation"
@@ -205,20 +212,24 @@
         android:layout_height="60dp"
         android:orientation="horizontal"
         android:gravity="center"
+        android:layout_marginBottom="5dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="0dp"
         android:padding="5dp">
 
+
         <LinearLayout
+            android:id="@+id/nav_home"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:gravity="center">
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true">
             <ImageView
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/Home"/>
+                android:src="@drawable/home"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -227,15 +238,18 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/nav_status"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:gravity="center">
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true">
             <ImageView
                 android:layout_width="25dp"
                 android:layout_height="30dp"
-                android:src="@drawable/Status"/>
+                android:src="@drawable/status"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -244,15 +258,18 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/nav_experience"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:gravity="center">
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true">
             <ImageView
                 android:layout_width="38dp"
                 android:layout_height="35dp"
-                android:src="@drawable/Experience"/>
+                android:src="@drawable/experience"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -261,15 +278,18 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/nav_profile"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:gravity="center">
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true">
             <ImageView
                 android:layout_width="38dp"
                 android:layout_height="35dp"
-                android:src="@drawable/Profile"/>
+                android:src="@drawable/profile"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -279,12 +299,4 @@
 
     </LinearLayout>
 
-    <!-- Downline Image Below Navigation Bar -->
-    <ImageView
-        android:id="@+id/downline"
-        android:layout_width="450dp"
-        android:layout_height="40dp"
-        android:layout_alignParentBottom="true"
-        android:scaleType="fitXY"
-        android:src="@drawable/downline" />
 </LinearLayout>
