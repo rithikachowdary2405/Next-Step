@@ -13,21 +13,25 @@
         android:layout_height="55dp">
 
         <ImageView
-            android:id="@+id/backButton"
-            android:layout_width="55dp"
-            android:layout_height="45dp"
+            android:id="@+id/back_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_alignParentStart="true"
-            android:layout_marginStart="4dp"
-            android:src="@drawable/back" />
+            android:layout_centerVertical="true"
+            android:src="@drawable/back"
+            android:clickable="true"
+            android:focusable="true"/>
 
 
         <ImageView
             android:id="@+id/profileIcon"
-            android:layout_width="35dp"
-            android:layout_height="40dp"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
             android:layout_alignParentEnd="true"
             android:layout_marginEnd="8dp"
-            android:src="@drawable/notification1" />
+            android:src="@drawable/notification1"
+            android:clickable="true"
+            android:focusable="true"/>
     </RelativeLayout>
 
     <!-- Profile Section -->
@@ -35,7 +39,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#D8A5A5"
-        android:padding="12dp"
+        android:padding="10dp"
         android:gravity="center"
         android:orientation="horizontal">
 
@@ -43,13 +47,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="My Profile"
-            android:textSize="35sp"
+            android:textSize="22sp"
             android:textStyle="bold"
             android:textColor="@android:color/black"/>
 
         <ImageView
-            android:layout_width="45dp"
-            android:layout_height="45dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             android:src="@drawable/profile1"
             android:layout_marginStart="16dp"/>
     </LinearLayout>
@@ -77,17 +81,17 @@
             <ImageView
                 android:layout_width="29dp"
                 android:layout_height="32dp"
-                android:src="@drawable/Resume" />
+                android:src="@drawable/resume" />
 
             <TextView
                 android:id="@+id/MyResume"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="My Resume"
-                android:textSize="25sp"
+                android:textSize="22sp"
                 android:textStyle="bold"
                 android:textColor="@android:color/black"
-                android:layout_marginStart="15dp"/>
+                android:layout_marginStart="15dp" />
         </LinearLayout>
 
         <!-- Logout -->
@@ -104,28 +108,19 @@
             <ImageView
                 android:layout_width="32dp"
                 android:layout_height="34dp"
-                android:src="@drawable/Logout" />
+                android:src="@drawable/logout" />
 
             <TextView
                 android:id="@+id/Logout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Log out"
-                android:textSize="25sp"
+                android:textSize="22sp"
                 android:textStyle="bold"
                 android:textColor="@android:color/black"
                 android:layout_marginStart="15dp"/>
         </LinearLayout>
 
     </LinearLayout>
-
-    <!-- Downline Image at Bottom -->
-    <ImageView
-        android:id="@+id/downlineImage"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:src="@drawable/downline"
-        android:scaleType="fitXY"
-        android:layout_gravity="bottom"/>
 
 </LinearLayout>
