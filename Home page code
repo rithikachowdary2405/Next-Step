@@ -16,7 +16,9 @@
             android:layout_height="35dp"
             android:src="@drawable/notification1"
             android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true"/>
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:focusable="true"/>
     </RelativeLayout>
 
     <!-- Welcome Banner with Border -->
@@ -69,7 +71,9 @@
             android:background="@null"
             android:gravity="center"
             android:hint="Search"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:clickable="true"
+            android:focusable="true"/>
     </LinearLayout>
 
     <!-- Explore Section -->
@@ -100,12 +104,14 @@
             android:background="@drawable/box"
             android:gravity="center"
             android:orientation="horizontal"
-            android:padding="10dp">
+            android:padding="10dp"
+            android:clickable="true"
+            android:focusable="true">
 
             <ImageView
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/Resume" />
+                android:src="@drawable/resume" />
 
             <TextView
                 android:layout_width="174dp"
@@ -124,12 +130,14 @@
             android:background="@drawable/box"
             android:gravity="center"
             android:orientation="horizontal"
-            android:padding="10dp">
+            android:padding="10dp"
+            android:clickable="true"
+            android:focusable="true">
 
             <ImageView
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/Track" />
+                android:src="@drawable/track" />
 
             <TextView
                 android:layout_width="183dp"
@@ -149,24 +157,29 @@
 
     <!-- Bottom Navigation Bar -->
     <LinearLayout
+        android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:orientation="horizontal"
-        android:background="#FFFFFF"
-        android:weightSum="4">
+        android:gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp">
+
 
         <LinearLayout
+            android:id="@+id/nav_home"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
             android:layout_weight="1"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:gravity="center">
-
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true">
             <ImageView
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:src="@drawable/Home"/>
-
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/home"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -175,17 +188,18 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/nav_status"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
             android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
             android:gravity="center"
-            android:orientation="vertical">
-
+            android:clickable="true"
+            android:focusable="true">
             <ImageView
                 android:layout_width="25dp"
-                android:layout_height="35dp"
-                android:src="@drawable/Status"/>
-
+                android:layout_height="30dp"
+                android:src="@drawable/status"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -194,17 +208,18 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/nav_experience"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
             android:layout_weight="1"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:gravity="center">
-
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true">
             <ImageView
                 android:layout_width="38dp"
                 android:layout_height="35dp"
-                android:src="@drawable/Experience"/>
-
+                android:src="@drawable/experience"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -213,30 +228,27 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/nav_profile"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
             android:layout_weight="1"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:gravity="center">
-
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true">
             <ImageView
                 android:layout_width="38dp"
                 android:layout_height="35dp"
-                android:src="@drawable/Profile"/>
-
+                android:src="@drawable/profile"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Profile"
                 android:textSize="13sp"/>
         </LinearLayout>
+
     </LinearLayout>
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/downline" />
-
+    
 </LinearLayout>
+
 
