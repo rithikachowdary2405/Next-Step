@@ -1,6 +1,4 @@
-Notification screen :
-
-LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -23,51 +21,11 @@ LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
             android:src="@drawable/back" />
 
         <!-- Notification Bell -->
-        <ImageView
-            android:id="@+id/notification_icon"
-            android:layout_width="50dp"
-            android:layout_height="40dp"
-            android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true"
-            android:src="@drawable/notification" />
+
     </RelativeLayout>
 
     <!-- Tabs (All | Starred) with Divider -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:orientation="horizontal"
-        android:background="#D9A6A6"
-        android:padding="5dp">
 
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="All"
-            android:background="#D9A6A6"
-            android:textColor="#000000"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:layout_marginEnd="5dp" />
-
-        <!-- Divider between All and Starred -->
-        <View
-            android:layout_width="2dp"
-            android:layout_height="match_parent"
-            android:background="#000000" />
-
-        <Button
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="Starred"
-            android:background="#D9A6A6"
-            android:textColor="#000000"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:layout_marginStart="5dp" />
-    </LinearLayout>
 
     <!-- Inbox Label -->
     <TextView
@@ -78,7 +36,8 @@ LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:text="Inbox"
         android:textStyle="bold"
         android:textSize="16sp"
-        android:textColor="#000000"/>
+        android:textColor="#000000"
+        android:layout_marginBottom="30dp"/>
 
     <!-- Notification List (Scrollable) -->
     <ScrollView
@@ -104,16 +63,13 @@ LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Your next interview is on Feb 7th 10am"
+                    android:text=""
                     android:textSize="14sp"
                     android:textColor="#000000"
                     android:textStyle="bold"
                     android:gravity="center" />
 
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:src="@drawable/starred"/>
+
             </LinearLayout>
 
             <!-- More Notifications (Text Centered, Stars Aligned Right) -->
@@ -129,15 +85,12 @@ LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Notification 2"
+                    android:text=""
                     android:textSize="14sp"
                     android:textColor="#000000"
                     android:gravity="center" />
 
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:src="@drawable/star" />
+
             </LinearLayout>
 
             <LinearLayout
@@ -152,15 +105,12 @@ LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Notification 3"
+                    android:text=""
                     android:textSize="14sp"
                     android:textColor="#000000"
                     android:gravity="center" />
 
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:src="@drawable/star" />
+
             </LinearLayout>
 
             <LinearLayout
@@ -175,15 +125,12 @@ LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Notification 4"
+                    android:text=" "
                     android:textSize="14sp"
                     android:textColor="#000000"
                     android:gravity="center" />
 
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:src="@drawable/star" />
+
             </LinearLayout>
 
             <LinearLayout
@@ -198,15 +145,12 @@ LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Notification 5"
+                    android:text=" "
                     android:textSize="14sp"
                     android:textColor="#000000"
                     android:gravity="center" />
 
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:src="@drawable/star" />
+
             </LinearLayout>
 
             <LinearLayout
@@ -221,15 +165,12 @@ LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Notification 5"
+                    android:text=" "
                     android:textSize="14sp"
                     android:textColor="#000000"
                     android:gravity="center" />
 
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:src="@drawable/star" />
+
             </LinearLayout>
 
             <LinearLayout
@@ -244,15 +185,12 @@ LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Notification 6"
+                    android:text=" "
                     android:textSize="14sp"
                     android:textColor="#000000"
                     android:gravity="center" />
 
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:src="@drawable/starred" />
+
             </LinearLayout>
 
             <LinearLayout
@@ -267,15 +205,12 @@ LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Notification 7"
+                    android:text=" "
                     android:textSize="14sp"
                     android:textColor="#000000"
                     android:gravity="center" />
 
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:src="@drawable/star" />
+
             </LinearLayout>
 
             <LinearLayout
@@ -290,15 +225,12 @@ LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Notification 8"
+                    android:text=" "
                     android:textSize="14sp"
                     android:textColor="#000000"
                     android:gravity="center" />
 
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:src="@drawable/star" />
+
             </LinearLayout>
 
             <LinearLayout
@@ -313,15 +245,11 @@ LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Notification 9"
+                    android:text=" "
                     android:textSize="14sp"
                     android:textColor="#000000"
                     android:gravity="center" />
 
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:src="@drawable/star" />
             </LinearLayout>
 
         </LinearLayout>
@@ -329,93 +257,98 @@ LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
     <!-- Bottom Navigation Bar -->
     <LinearLayout
+        android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:orientation="horizontal"
-        android:background="#FFFFFF"
-        android:weightSum="4">
+        android:gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp">
+
 
         <LinearLayout
+            android:id="@+id/nav_home"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
             android:layout_weight="1"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:gravity="center">
-
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true">
             <ImageView
-                android:layout_width="40dp"
-                android:layout_height="35dp"
-                android:src="@drawable/Home" />
-
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/home"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Home"
-                android:textSize="15sp" />
+                android:textSize="13sp"/>
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/nav_status"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:orientation="vertical"
-            android:gravity="center">
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical">
 
             <ImageView
                 android:layout_width="30dp"
-                android:layout_height="36dp"
-                android:src="@drawable/Status" />
+                android:layout_height="30dp"
+                android:src="@drawable/status" />
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="20dp"
+                android:layout_height="wrap_content"
                 android:text="Status"
-                android:textSize="15sp" />
+                android:textSize="13sp" />
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/nav_experience"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
             android:layout_weight="1"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:gravity="center">
-
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true">
             <ImageView
-                android:layout_width="40dp"
-                android:layout_height="38dp"
-                android:src="@drawable/Experience" />
-
+                android:layout_width="38dp"
+                android:layout_height="35dp"
+                android:src="@drawable/experience"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Experience"
-                android:textSize="15sp" />
+                android:textSize="13sp"/>
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/nav_profile"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
             android:layout_weight="1"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:gravity="center">
-
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true">
             <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:src="@drawable/Profile" />
-
+                android:layout_width="38dp"
+                android:layout_height="35dp"
+                android:src="@drawable/profile"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Profile"
-                android:textSize="15sp" />
+                android:textSize="13sp"/>
         </LinearLayout>
+
     </LinearLayout>
 
-    <!-- Downline Image Below Navigation Bar -->
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:src="@drawable/downline"
-        android:scaleType="fitXY"/>
 </LinearLayout>
